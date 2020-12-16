@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #101d2c;
+}
+.my-4 {
+  visibility: hidden;
+}
+.navbar-brand {
+  justify-content: center;
+  max-width: 150px;
+  transform: translateX(-50%);
+  transition: opacity 650ms;
+}
+
+.navbar-brand:hover {
+  opacity: 0.8;
+}
+.about-section {
+  background: url(images/about-img.jpg) no-repeat left;
+  background-size: 55%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: black;
+  padding: 90px;
+}
+h1 {
+  font-family: "Niconne";
+  color: #c69963;
+}
+p {
+  color: #c69963;
+}
+/* footer */
+footer {
+  background-color: #101d2c;
+  color: grey;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  color: #c69963;
+  border: 1.5px solid;
+  margin-right: 0 0.45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #101d2c;
+  background-color: #c69963;
+  text-decoration: none;
+  border-color: #101d2c;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+  @media screen and (max-width: 1000px) {
+    .about-section {
+      background-size: 100%;
+      padding: 100px 40px;
+    }
+    .inner-container {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .about-section {
+      padding: 0;
+    }
+    .navbar-brand {
+      max-width: 100px;
+    }
+    .inner-container {
+      padding: 60px;
+    }
+  }
+}
